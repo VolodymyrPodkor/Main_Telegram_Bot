@@ -1,6 +1,5 @@
-package org.example.feature.telegram.command;
+package telegram.command;
 
-import org.example.feature.telegram.buttons.SettingsCommand;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 import org.telegram.telegrambots.meta.api.objects.Chat;
 import org.telegram.telegrambots.meta.api.objects.User;
@@ -9,6 +8,7 @@ import org.telegram.telegrambots.meta.bots.AbsSender;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 import org.telegram.telegrambots.extensions.bots.commandbot.commands.BotCommand;
 import org.telegram.telegrambots.meta.api.objects.replykeyboard.InlineKeyboardMarkup;
+import telegram.TelegramBot;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -16,7 +16,6 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-import org.example.feature.currency.Currency;
 
 
 public class StartCommand extends BotCommand {
@@ -54,7 +53,7 @@ public class StartCommand extends BotCommand {
         message.setReplyMarkup(keyboardMarkup);
 
         try {
-            absSender.execute(message);
+            (absSender).execute(message);
         } catch (TelegramApiException e) {
             e.printStackTrace();
         }

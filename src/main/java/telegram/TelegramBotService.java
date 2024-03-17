@@ -1,14 +1,13 @@
-package org.example.feature.telegram;
-
+package telegram;
 import org.telegram.telegrambots.meta.TelegramBotsApi;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 import org.telegram.telegrambots.updatesreceivers.DefaultBotSession;
 
 public class TelegramBotService {
-    private CurrencyTelegramBot currencyTelegramBot;
+    private TelegramBot currencyTelegramBot;
 
     public TelegramBotService() {
-        currencyTelegramBot = new CurrencyTelegramBot();
+        currencyTelegramBot = new TelegramBot();
 
         try {
             TelegramBotsApi telegramBotsApi = new TelegramBotsApi(DefaultBotSession.class);

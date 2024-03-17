@@ -1,4 +1,5 @@
-package org.example.feature.telegram.buttons;
+package telegram.buttons_menu;
+
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 import org.telegram.telegrambots.meta.api.objects.Chat;
 import org.telegram.telegrambots.meta.api.objects.User;
@@ -26,12 +27,6 @@ public class SettingsCommand extends BotCommand {
         InlineKeyboardMarkup keyboardMarkup = new InlineKeyboardMarkup();
 
         // Створюємо кнопки
-        List<InlineKeyboardButton> row1 = new ArrayList<>();
-        InlineKeyboardButton digitsButton = new InlineKeyboardButton();
-        digitsButton.setText("Кількість знаків після коми");
-        digitsButton.setCallbackData("digits");
-        row1.add(digitsButton);
-
         List<InlineKeyboardButton> row2 = new ArrayList<>();
         InlineKeyboardButton bankButton = new InlineKeyboardButton();
         bankButton.setText("Банк");
@@ -44,11 +39,23 @@ public class SettingsCommand extends BotCommand {
         currencyButton.setCallbackData("currency");
         row3.add(currencyButton);
 
+        List<InlineKeyboardButton> row1 = new ArrayList<>();
+        InlineKeyboardButton digitsButton = new InlineKeyboardButton();
+        digitsButton.setText("Кількість знаків після коми");
+        digitsButton.setCallbackData("digits");
+        row1.add(digitsButton);
+
         List<InlineKeyboardButton> row4 = new ArrayList<>();
         InlineKeyboardButton timeButton = new InlineKeyboardButton();
-        timeButton.setText("Час оповіщень");
+        timeButton.setText("Час сповіщень");
         timeButton.setCallbackData("time");
         row4.add(timeButton);
+
+        List<InlineKeyboardButton> row5 = new ArrayList<>();
+        InlineKeyboardButton backButton = new InlineKeyboardButton();
+        timeButton.setText("Повернутись до головного меню");
+        timeButton.setCallbackData("start");
+        row5.add(backButton);
 
         // Добавляємо кнопки
         List<List<InlineKeyboardButton>> keyboard = new ArrayList<>();
@@ -56,9 +63,10 @@ public class SettingsCommand extends BotCommand {
         keyboard.add(row2);
         keyboard.add(row3);
         keyboard.add(row4);
+        keyboard.add(row5);
         keyboardMarkup.setKeyboard(keyboard);
 
-        // Устанавливаем клавиатуру в сообщение
+
         message.setReplyMarkup(keyboardMarkup);
 
         try {

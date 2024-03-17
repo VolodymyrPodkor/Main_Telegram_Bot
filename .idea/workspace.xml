@@ -4,26 +4,34 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6eeba14c-41b4-4d4e-a026-29dd41768c7f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/feature/TelegramBotApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/feature/currency/Currency.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/feature/currency/CurrencyService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/feature/currency/MonoCurrencyService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/feature/currency/NBUCurrencyService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/feature/currency/PrivateBankCurrencyService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/feature/dto/CurrencyItemMB.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/feature/dto/CurrencyItemNBU.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/feature/dto/CurrencyItemPB.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/feature/telegram/BotConstants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/feature/telegram/CurrencyTelegramBot.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/feature/telegram/TelegramBotService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/feature/telegram/buttons/BankCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/feature/telegram/buttons/InfoCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/feature/telegram/buttons/SettingsCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/feature/telegram/command/StartCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/feature/ui/PrettyCurrencyService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="6eeba14c-41b4-4d4e-a026-29dd41768c7f" name="Changes" comment="Telegram test Bot">
+      <change afterPath="$PROJECT_DIR$/src/main/java/TelegramBotApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/telegram/BotConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/telegram/TelegramBot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/telegram/TelegramBotService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/telegram/buttons_menu/BankCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/telegram/buttons_menu/NotificationTimeCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/telegram/buttons_menu/NumberOfPlacesCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/telegram/command/StartCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/feature/TelegramBotApp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/feature/currency/Currency.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/feature/currency/CurrencyService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/feature/currency/MonoCurrencyService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/feature/currency/NBUCurrencyService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/feature/currency/PrivateBankCurrencyService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/feature/dto/CurrencyItemMB.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/feature/dto/CurrencyItemNBU.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/feature/dto/CurrencyItemPB.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/feature/telegram/BotConstants.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/feature/telegram/CurrencyTelegramBot.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/feature/telegram/TelegramBotService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/feature/telegram/buttons/BankCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/telegram/buttons_menu/CurrencyCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/feature/telegram/buttons/InfoCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/telegram/buttons_menu/InfoCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/feature/telegram/buttons/SettingsCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/telegram/buttons_menu/SettingsCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/feature/telegram/command/StartCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/feature/ui/PrettyCurrencyService.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +41,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -77,6 +86,20 @@
   }
 }</component>
   <component name="RunManager" selected="Application.TelegramBotApp">
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="prj_telegram_bot_5gr" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="prj_telegram_bot_5gr" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Main" />
       <module name="prj_telegram_bot_5gr" />
@@ -90,12 +113,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TelegramBotApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.feature.TelegramBotApp" />
+    <configuration name="TelegramAppLauncher" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TelegramAppLauncher" />
       <module name="prj_telegram_bot_5gr" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.feature.*" />
+          <option name="PATTERN" value=".*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -103,9 +126,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TelegramBotApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TelegramBotApp" />
+      <module name="prj_telegram_bot_5gr" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.TelegramBotApp" />
+        <item itemvalue="Application.Main (1)" />
+        <item itemvalue="Application.Main (2)" />
+        <item itemvalue="Application.TelegramAppLauncher" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -119,7 +152,19 @@
       <option name="presentableId" value="Default" />
       <updated>1710446218685</updated>
     </task>
+    <task id="LOCAL-00001" summary="Telegram test Bot">
+      <created>1710622872363</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1710622872363</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Telegram test Bot" />
+    <option name="LAST_COMMIT_MESSAGE" value="Telegram test Bot" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
