@@ -162,21 +162,31 @@ public class TelegramBot extends TelegramLongPollingCommandBot {
         responseMessage.setText("Оберіть банк:");
 
         InlineKeyboardMarkup keyboardMarkup = new InlineKeyboardMarkup();
-        List<List<InlineKeyboardButton>> keyboard = new ArrayList<>();
+        List<List<InlineKeyboardButton>> keyboardButtons = new ArrayList<>();
 
-        keyboard.add(createButtonRow("9", "button9"));
-        keyboard.add(createButtonRow("10", "button10"));
-        keyboard.add(createButtonRow("11", "button11"));
-        keyboard.add(createButtonRow("12", "button12"));
-        keyboard.add(createButtonRow("13", "button13"));
-        keyboard.add(createButtonRow("14", "button14"));
-        keyboard.add(createButtonRow("15", "button15"));
-        keyboard.add(createButtonRow("16", "button16"));
-        keyboard.add(createButtonRow("17", "button17"));
-        keyboard.add(createButtonRow("Вимкнути сповіщення", "turnOff"));
-        keyboard.add(createButtonRow("Повернутись до головного меню", "back"));
+        List<InlineKeyboardButton> row1 = new ArrayList<>();
+        row1.addAll(createButtonRow("9", "button9"));
+        row1.addAll(createButtonRow("10", "button10"));
+        row1.addAll(createButtonRow("11", "button11"));
+        keyboardButtons.add(row1);
 
-        keyboardMarkup.setKeyboard(keyboard);
+        List<InlineKeyboardButton> row2 = new ArrayList<>();
+        row2.addAll(createButtonRow("12", "button12"));
+        row2.addAll(createButtonRow("13", "button13"));
+        row2.addAll(createButtonRow("14", "button14"));
+        keyboardButtons.add(row2);
+
+        List<InlineKeyboardButton> row3 = new ArrayList<>();
+        row3.addAll(createButtonRow("15", "button15"));
+        row3.addAll(createButtonRow("16", "button16"));
+        row3.addAll(createButtonRow("17", "button17"));
+        keyboardButtons.add(row3);
+
+
+        keyboardButtons.add(createButtonRow("Вимкнути сповіщення", "turnOff"));
+        keyboardButtons.add(createButtonRow("Повернутись до головного меню", "back"));
+
+        keyboardMarkup.setKeyboard(keyboardButtons);
         responseMessage.setReplyMarkup(keyboardMarkup);
 
         try {
