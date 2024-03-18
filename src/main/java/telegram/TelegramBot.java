@@ -159,7 +159,7 @@ public class TelegramBot extends TelegramLongPollingCommandBot {
         SendMessage responseMessage = new SendMessage();
         long chatId = update.getCallbackQuery().getMessage().getChatId();
         responseMessage.setChatId(Long.toString(chatId));
-        responseMessage.setText("Оберіть банк:");
+        responseMessage.setText("Оберіть час сповіщення:");
 
         InlineKeyboardMarkup keyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> keyboardButtons = new ArrayList<>();
@@ -182,7 +182,6 @@ public class TelegramBot extends TelegramLongPollingCommandBot {
         row3.addAll(createButtonRow("17", "button17"));
         keyboardButtons.add(row3);
 
-
         keyboardButtons.add(createButtonRow("Вимкнути сповіщення", "turnOff"));
         keyboardButtons.add(createButtonRow("Повернутись до головного меню", "back"));
 
@@ -200,7 +199,17 @@ public class TelegramBot extends TelegramLongPollingCommandBot {
         SendMessage responseMessage = new SendMessage();
         long chatId = update.getCallbackQuery().getMessage().getChatId();
         responseMessage.setChatId(Long.toString(chatId));
-        responseMessage.setText("Повернення на головне меню");
+        responseMessage.setText("Ласкаво просимо. Цей бот допоможе відслідковувати актуальні курси валют.");
+
+        InlineKeyboardMarkup keyboardMarkup =new InlineKeyboardMarkup();
+        List<List<InlineKeyboardButton>> keyboardButtons = new ArrayList<>();
+
+        keyboardButtons.add(createButtonRow("Отримати інфо", "info"));
+        keyboardButtons.add(createButtonRow("Налаштування", "settings"));
+
+        keyboardMarkup.setKeyboard(keyboardButtons);
+        responseMessage.setReplyMarkup(keyboardMarkup);
+
         try {
             execute(responseMessage);
         } catch (TelegramApiException e) {
